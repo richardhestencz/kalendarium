@@ -1,0 +1,247 @@
+
+/*====ALTALANOS====*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+}
+
+body
+{
+margin: 0; /*kulcselem*/
+padding: 0; /*kulcselem*/
+background-color: lightgrey; 
+font-family: "Bigfont";
+font-size: 1.2em;
+}
+
+
+/*====Navigáció====*/
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    align-content: flex-end;
+    margin: 0;
+    padding: 5em 0em 0em 0em;
+    
+    
+   
+    
+}
+
+.container>* {
+    height: fit-content;
+    margin: 0.2%;
+    
+    
+}
+
+
+
+/*====Cím,alcím====*/
+header h1 {
+    margin: 0;
+    padding: 0.2em;
+    font-size: 5em;
+    text-align: center;
+    color: rgb(73, 62, 62);
+    background-color: lightgrey; 
+    font-family: "Notasbig";
+    }
+
+
+
+section h2.elso {
+    margin: 0;
+    padding: 0.2em;
+    padding-bottom: 1em ;
+    font-size: 3.6em;
+    text-align: center;
+    color: rgb(73, 62, 62);
+    background-color: lightgrey; 
+    font-family: "Bigfont";
+}
+
+section h2.alcim {
+    margin: 0;
+    padding: 0.2em;
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(73, 62, 62);
+    background-color: lightgrey; 
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 1%;
+    font-family: "Littlem";
+}
+
+
+section h2.kozepcim {
+    margin: 0;
+    padding: 0.2em;
+    font-size: 2.5em;
+    text-align: center;
+    color: rgb(73, 62, 62);
+    background-color: lightgrey; 
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 1%;
+    font-family: "Littlem";
+}
+
+
+
+
+
+
+/*====section====*/
+.hatter{
+    background-color: lightgrey; 
+}
+
+section .balos {
+    color: rgb(73, 62, 62);
+    margin: 1%;
+}
+
+section .jobbos {
+    color: rgb(73, 62, 62);
+    margin: 1%;
+    text-align: right;
+    padding-bottom: 1em;
+}
+
+
+
+
+article{
+    border: solid white 10px;
+    border-radius: 10px;
+}
+
+
+.karakterekbal{
+    display: flex;
+    color: rgb(73, 62, 62);
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    margin-left: 1%;
+    flex-direction: column;
+    justify-content: space-around;
+    
+   
+}
+p.karakterekbalos{
+    margin-right: 1%;
+    border-left: solid black;
+    padding-left: 3% ;
+    text-align: center;
+
+}
+
+
+
+
+.karakterekjobb{
+    display: flex;
+    color: rgb(73, 62, 62);
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: right;
+    margin-right: 1%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+p.karakterekjobbos{
+    margin-left: 1%;
+    border-right: solid black;
+    padding-right: 3% ;
+    text-align: center;
+
+}
+
+#hely{
+    padding-top: 3em;
+}
+
+.champs{
+    height: 1000px;
+    width: 100%;
+    border: solid #C89B3C;
+}
+
+
+
+
+@media all and (min-width: 750px) {
+ .container{
+    flex-wrap:nowrap;
+ }
+ section article table{
+    margin: auto;
+    display: table;
+    flex-wrap: wrap;
+ }
+
+ .karakterekbal{
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    flex: 1 1 100%;
+ }
+
+ .karakterekjobb{
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+ }
+
+ .champs{
+    width: 170vw;
+    border: solid #C89B3C;
+}
+
+  
+ section article table tr td.jobb{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 20%;
+    display: table-cell;
+    vertical-align: top;
+    
+    
+    }
+
+    section article table tr td.bal{
+        padding-top: 0;
+        padding-bottom: 0;
+        display: table-cell;
+        vertical-align: top;
+        
+        
+        }
+
+
+    section article table tr td.jobb{
+        display: table;
+    }
+
+    section h2.elso {
+        margin: 0;
+        padding: 0.2em;
+        padding-bottom: 1em;
+        font-size: 4em;
+    }
+
+ }
+
